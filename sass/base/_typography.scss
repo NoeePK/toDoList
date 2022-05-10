@@ -1,15 +1,20 @@
 @font-face {
-    font-family:'Permanent Marker', cursive;
-    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    font-family: 'Just Me Again Down Here', cursive;
+    @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 }
 
-body{
-    font-family: 'Permanent Marker', cursive;
+body {
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 1.7em;
     color: white;
-    line-height: 2;
-
+    line-height: 1.8;
 }
 
-h2{
-    font-family: 'Permanent Marker', cursive;
+h2 {
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 3em;
+    text-shadow: 4px 9px rgb(136, 133, 133);
+    text-decoration: underline;
+    margin-bottom: 0%;
+
 }
