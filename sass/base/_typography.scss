@@ -1,4 +1,15 @@
 @font-face {
-    font-family:'Permanent Marker', cursive; ;
-    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    font-family:'Permanent Marker', cursive;
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+}
+
+body{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    line-height: 2;
+
+}
+
+h2{
+    font-family: 'Permanent Marker', cursive;
 }

@@ -1,0 +1,24 @@
+/*Rendre uniquement le bg transparent*/
+html::after {
+    content: "";
+    background-image: url(../images/bg_black.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+body{
+     
+    width: 60%;
+    margin: auto;
+    margin-top: 20%;
+}
+
