@@ -1,0 +1,16 @@
+{
+    "name": "todolist",
+    "version": "1.0.0",
+    "description": "Site d'entrainement Javascript",
+    "main": "script.js",
+    "scripts": {
+      "sass": "sass --watch sass/index.scss:./compiled/style.css"
+    },
+    "author": "NoeePK",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/NoeePK/toDoList"
+    },
+    "homepage": "https://github.com/NoeePK/toDoList#readme"
+  }
+  

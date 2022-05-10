@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="compiled/style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="tasks_list" class="tasks_list"></section>
+    <h2>ToDoList</h2>
+    <fieldset id="tasks" class="tasks">
+        <div>
+            <input type="checkbox" name="task" id="task">
+            <label for="task"> Réussir ma vie</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task" id="task">
+            <label for="task">Apprendre le Javascript</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task" id="task">
+            <label for="task"> Passer l'aspirateur</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task" id="task">
+            <label for="task">Câliner les chats</label>
+        </div>
+
+
+    </fieldset>
+    </section>
+
+    <section id="new_task" class="new_task">
+        <form class="new_task_form" onsubmit="handleSubmit(event)">
+            <div class="new_task_form__input">
+                <label for="task_text">Prochaine mission</label>
+                <input type="text" name="task_text" id="task_text" cols="30" rows="10" placeholder="Nouvelle tâche"
+                    maxlength="25">
+            </div>
+            <button type="submit" id="new_task_button">Ajouter</button>
+        </form>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
