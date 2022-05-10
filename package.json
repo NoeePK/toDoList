@@ -6,6 +6,9 @@
     "scripts": {
       "sass": "sass --watch sass/index.scss:./compiled/style.css"
     },
+    "repository": {
+      "git": "https://github.com/NoeePK/toDoList.git"
+    },
     "author": "NoeePK",
     "license": "ISC",
     "bugs": {
