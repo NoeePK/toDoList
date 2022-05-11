@@ -1,16 +1,6 @@
-input[type="checkbox"]:checked {
-    background-color: black;
-}
-
-
-input[type=checkbox]+label {
-    color: rgb(235, 227, 227);
-
-}
-
 input[type=checkbox]:checked+label {
     text-decoration: line-through;
     opacity: 0.5;
     font-style: italic;
-    accent-color: red;
+    
 }

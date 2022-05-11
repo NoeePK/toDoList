@@ -1,35 +1,11 @@
-
-
-
-const formText = ['#task_text']
-
-document.getElementById('new_task_button').onclick = function () {
-    const checkbox = document.createElement('input')
-    checkbox.type = 'checkbox'
-    checkbox.id = 'task'
-    checkbox.name = 'task'
-    document.tasks.appendChild(formText)
-
-const label = document.createElement('#task_text')
-    label.htmlFor = '#task_text'
-    label.appendChild(document.createTextNode(formText))
-
-    const tasks = document.getElementById('tasks')
-    tasks.appendChild(checkbox)
-    
-
-
-
-}
-
 const createNewTask = (text) => {
-    const newTask = document.createElement('checkbox')
+    const newTask = document.createElement('div')
     newTask.classList.add('task')
 
-    const taskDescription = document.createElement('p')
-    taskDescription.classList.add('task_text')
-    taskDescription.innerText = text
-    newTask.appendChild(taskDescription)
+    const taskLabel = document.createElement('label')
+    taskLabel.classList.add('label')
+    taskLabel.innerText = text
+    newTask.appendChild(taskLabel)
 
     return newTask
 }
@@ -37,6 +13,7 @@ const createNewTask = (text) => {
 const resetForm = () => {
     document.querySelector('#task_text').value = ''
 }
+
 
 const handleSubmit = (event) => {
     event.preventDefault()

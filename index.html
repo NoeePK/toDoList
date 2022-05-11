@@ -18,19 +18,19 @@
     <h2>ToDoList</h2>
     <fieldset id="tasks" class="tasks">
         <div>
-            <input type="checkbox" name="task" id="task" value="none">
+            <input type="checkbox" name="task" class="task">
             <label for="task"> Réussir ma vie</label>
         </div>
         <div>
-            <input type="checkbox" name="task" id="task">
+            <input type="checkbox" name="task" class="task">
             <label for="task">Apprendre le Javascript</label>
         </div>
         <div>
-            <input type="checkbox" name="task" id="task">
+            <input type="checkbox" name="task" class="task">
             <label for="task"> Passer l'aspirateur</label>
         </div>
         <div>
-            <input type="checkbox" name="task" id="task" checked>
+            <input type="checkbox" name="task" class="task" checked>
             <label for="task">Câliner les chats</label>
         </div>
 
@@ -43,7 +43,7 @@
             <div class="new_task_form__input">
                 <label for="task_text">Prochaine mission</label>
                 <input type="text" name="task_text" id="task_text" cols="30" rows="10" placeholder="Nouvelle tâche"
-                    maxlength="25">
+                    maxlength="30">
             </div>
             <button type="submit" id="new_task_button">Ajouter</button>
         </form>
