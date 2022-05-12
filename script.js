@@ -1,42 +1,35 @@
 
-const createCheckboxButton = (button) => {
-    const checkboxButton = document.createElement('button')
-    document.querySelector('.taskDone').appendChild(checkboxButton)
+// Add a "checked" symbol when clicking on a list item
+const list = document.querySelector('ul');
+list.addEventListener('click', function(event) {
+  if (event.target.tagName === 'LI') {
+    event.target.classList.toggle('checked');
+  }
+}, false);
 
-}
+// Create a new list item when clicking on the "Add" button
+function newTask() {
+  const li = document.createElement("li");
+  const taskInputValue = document.getElementById("new_task_input").value;
+  const t = document.createTextNode(taskInputValue);
+  li.appendChild(t);
+  if (taskInputValue === '') {
+    alert("Tu n'as pas besoin d'une tâche vide pour ne rien faire de ta journée");
+  } else {
+    document.getElementById("tasks").appendChild(li);
+  }
+  document.getElementById("new_task_input").value = "";
 
-const createNewTask = (text) => {
-    const newTask = document.createElement('div')
-    
+  const span = document.createElement("SPAN");
+  const txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
 
-    const taskBox = document.createElement("checkboxButton")
-    taskBox.classList.add("taskDone")
-    newTask.appendChild(taskBox)
-
-    const taskLabel = document.createElement('label')
-    taskLabel.classList.add("btn")
-    taskLabel.innerText = text
-    newTask.appendChild(taskLabel)
-
-    /*
-    const hiddenMssg = document.createElement('p')
-    hiddenMssg.classList.add("btn__hidden")
-    hiddenMssg.innerText = text
-    newTask.appendChild(hiddenMssg)
-*/ 
-    return newTask
-}
-
-const resetForm = () => {
-    document.querySelector('#task_text').value = ''
-}
-
-
-const handleSubmit = (event) => {
-    event.preventDefault()
-    const formText = document.querySelector('#task_text').value
-    const newTask = createNewTask(formText)
-    document.querySelector('#tasks').appendChild(newTask)
-
-    resetForm()
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      const div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
 }

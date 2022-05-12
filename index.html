@@ -9,55 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
     <link href="compiled/index.css" rel="stylesheet" type="text/css">
-
     <title>ToDoList</title>
 </head>
 
 <body>
-    <section id="tasks_list" class="tasks_list"></section>
-    <h2>ToDoList</h2>
-    <fieldset id="tasks" class="tasks">
-        <div>
-            <input type="checkbox" class="taskDone">
-            <label class="btn" for="taskDone"> Réussir ma vie</label>
-            <p class="btn__hidden">Are you done with it ?</p>
-            
+    <section>
+        <h2>ToDoList</h2>
+        <div id="tasks_list" class="tasks_list">
+            <ul id="tasks" class="tasks">
+                <li>Apprendre le Javascript</li>
+                <li>Passer l'aspirateur</li>
+                <li>Réussir ma vie</li>
+                <li>Câliner les chats</li>
+            </ul>
         </div>
-        <div>
-            <input type="checkbox" class="taskDone">
-            <label class="btn" for="taskDone">Apprendre le Javascript</label>
-            <p class="btn__hidden">Are you done with it ?</p>
-            
-        </div>
-        <div>
-            <input type="checkbox" class="taskDone">
-            <label class="btn" for="taskDone">Passer l'aspirateur</label>
-            <p class="btn__hidden">Are you done with it ?</p>
-        </div>
-        <div>
-            <input type="checkbox" class="taskDone" checked>
-            <label class="btn" for="taskDone">Câliner les chats</label>
-            <p class="btn__hidden">Are you done with it ?</p>
-            
-        </div>
-
-
-    </fieldset>
     </section>
-
     <section id="new_task" class="new_task">
-        <form class="new_task_form" onsubmit="handleSubmit(event)">
-            <div class="new_task_form__input">
-                <label for="task_text">Prochaine mission</label>
-                <input type="text" name="task_text" id="task_text" cols="30" rows="10" placeholder="Nouvelle tâche"
-                    maxlength="30">
-            </div>
-            <button type="submit" id="new_task_button">Ajouter</button>
-        </form>
-
+        <div id="new_task_div" class="new_task_div">
+            <input type="text" id="new_task_input" name="new_task_input" cols="30" rows="10"
+                placeholder="Nouvelle tâche" maxlength="30">
+            <span onclick="newTask()" class="new_task_btn">Ajouter</span>
+        </div>
     </section>
-
-
     <script src="script.js"></script>
 </body>
 
